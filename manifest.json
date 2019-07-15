@@ -1,0 +1,25 @@
+{
+  "name": "Acazia Logwork",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Extension thông báo nhắc nhở logwork Acazia",
+  "homepage_url": "https://acaziasoft.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "src/bg/background.js",
+      "src/notification.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "background",
+    "notifications",
+    "alarms"
+  ]
+}
